@@ -2,14 +2,12 @@ public class Plane{
 
     private int flightNumber;
     private String destination;
-    private Queue runway;
-    private boolean isCleared;
+    private Runway runway;
 
-    public Plane(int flightNumber, String destination, Queue runway, boolean isCleared){
+    public Plane(int flightNumber, String destination, Runway runway){
         this.flightNumber = flightNumber;
         this.destination = destination;
         this.runway = runway;
-        this.isCleared = isCleared;
     }
 
     public int getFlightNumber(){
@@ -20,15 +18,11 @@ public class Plane{
         return destination;
     }
 
-    public Queue getRunway(){
+    public Runway getRunway(){
         return runway;
     }
 
-    public void setCleared(boolean isCleared){
-        this.isCleared = isCleared;
-    }
-
-    public boolean isCleared(){
-        return isCleared;
+    public String getInfo(){
+        return "Flight number " + flightNumber + " going to " + destination + " taking off from runway " + runway.getName();
     }
 }
