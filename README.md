@@ -1,2 +1,2 @@
 # airport
-Airport porgram. Collaboration beteween Eric Lynn and Tin Buzancic
+Airport program. Collaboration beteween Eric Lynn and Tin Buzancic
